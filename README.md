@@ -53,9 +53,9 @@ git clone https://github.com/omaarelsherif/LEDs-Blinking-Using-ATmega32.git
 4. **Build the project:**
    * Build the project using Microship Studio or any another IDE
    * Use the USBASP Programmer to flash the ATmega32 with the generated hex file.
-5. Run the Simulation:
+5. **Run the Simulation:**
    * If you want to simulate the project, open it in Proteus and run the simulation.
-6. Enjoy the Blinking LEDs:
+6. **Enjoy the Blinking LEDs:**
    * Once programmed, the ATmega32 will sequentially light up the LEDs and then reset the sequence.
 
 <!-- OUTPUT -->
