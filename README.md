@@ -3,7 +3,7 @@
 
 <!-- OVERVIEW -->
 ## <br>**➲ Overview**
-This project demonstrates how to control 8 LEDs connected to PortA of an ATmega32 microcontroller. The LEDs sequentially light up one by one and then reset (turn off) before starting the sequence again. This project serves as a practical example of using a DIO (Digital Input/Output) driver to control hardware peripherals.
+This project demonstrates how to control 8 LEDs connected to PortA of an ATmega32 microcontroller with 8MHZ internal frequency. The LEDs sequentially light up one by one and then reset (turn off) before starting the sequence again. This project serves as a practical example of using a DIO (Digital Input/Output) driver to control hardware peripherals.
 
 <!-- HARDWARE REQUIREMENTS -->
 ## <br>**➲ Hardware Requirements**
