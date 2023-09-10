@@ -1,12 +1,6 @@
 <!-- PROJECT TITLE -->
 <h1 align="center">LEDs Blinking Using ATmega32</h1>
 
-<!-- HEADER 
-<p align="center">
-  <img src="Images/Email_Spam_Detection_Cover.png"/>
-</p>
--->
-
 <!-- OVERVIEW -->
 ## <br>**➲ Overview**
 This project demonstrates how to control 8 LEDs connected to PortA of an ATmega32 microcontroller. The LEDs sequentially light up one by one and then reset (turn off) before starting the sequence again. This project serves as a practical example of using a DIO (Digital Input/Output) driver to control hardware peripherals.
