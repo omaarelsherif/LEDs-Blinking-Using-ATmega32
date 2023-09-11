@@ -57,12 +57,12 @@ git clone https://github.com/omaarelsherif/LEDs-Blinking-Using-ATmega32.git
 <h4>Simulation Design: </h4>
 This gif showcases the simulation setup in Proteus, where the LEDs are connected to PortA of the ATmega32 microcontroller. The simulation demonstrates the sequential blinking of the LEDs.
 
-![Alt Text](LEDs/Output/software.gif)
+![Alt Text](LED/Output/software.gif)
 
 <h4>Hardware Connection (IMTSchool Kit): </h4>
 This gif illustrates the physical hardware setup using the IMTSchool Development Kit. The ATmega32 microcontroller is connected to the LEDs on an external kit, mirroring the simulation design.
 
-![Alt Text](LEDs/Output/hardware.gif)
+![Alt Text](LED/Output/hardware.gif)
 
 <!-- CONTACT -->
 ## <br>**➲ Contact**
