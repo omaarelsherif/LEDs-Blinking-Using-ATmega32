@@ -29,7 +29,7 @@ The project is structured as follows:
 * DIO Driver:
   * DIO_Program.c: The source code for the DIO driver functions.
   * DIO_Interface.h: The interface (header) file for the DIO driver.
-  * DIO_Private.h: Private declarations for the DIO driver.
+  * DIO_Register.h: Register addresses for the DIO driver.
 
 <!-- GETTING STARTED -->
 ## <br>**➲ Getting Started**
