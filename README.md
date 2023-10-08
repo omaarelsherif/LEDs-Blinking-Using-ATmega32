@@ -18,7 +18,7 @@ This project demonstrates how to control 8 LEDs connected to PortA of an ATmega3
 * <a href="https://sourceforge.net/projects/winavr/" target="_blank">WinAVR</a> 
 * <a href="https://www.fischl.de/usbasp/" target="_blank">USBASP driver</a> 
 
-**NOTE:** you can install another simulation program like multisim and another IDE like Microship studio or VS code with external compiler, anything can work all you need is to compile the project to generate hex file.
+**NOTE:** you can install another simulation program like multisim and another IDE like Microship Studio or VS code with external compiler, anything can work all you need is to compile the project to generate hex file.
 
 <!-- PROJECT STRUCTURE -->
 ## <br>**➲ Project Structure**
