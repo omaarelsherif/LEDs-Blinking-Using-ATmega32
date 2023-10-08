@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include MCAL/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -30,56 +31,56 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-LEDs.lss \
+LED.lss \
 
 FLASH_IMAGE += \
-LEDs.hex \
+LED.hex \
 
 EEPROM_IMAGE += \
-LEDs.eep \
+LED.eep \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: LEDs.elf secondary-outputs
+all: LED.elf secondary-outputs
 
 # Tool invocations
-LEDs.elf: $(OBJS) $(USER_OBJS)
+LED.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,LEDs.map -mmcu=atmega32 -o "LEDs.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,LED.map -mmcu=atmega32 -o "LED.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-LEDs.lss: LEDs.elf
+LED.lss: LED.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S LEDs.elf  >"LEDs.lss"
+	-avr-objdump -h -S LED.elf  >"LED.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LEDs.hex: LEDs.elf
+LED.hex: LED.elf
 	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LEDs.elf  "LEDs.hex"
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LED.elf  "LED.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LEDs.eep: LEDs.elf
+LED.eep: LED.elf
 	@echo 'Create eeprom image (ihex format)'
-	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex LEDs.elf  "LEDs.eep"
+	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex LED.elf  "LED.eep"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: LEDs.elf
+sizedummy: LED.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega32 LEDs.elf
+	-avr-size --format=avr --mcu=atmega32 LED.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(EEPROM_IMAGE)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) LEDs.elf
+	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(EEPROM_IMAGE)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) LED.elf
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(FLASH_IMAGE) $(EEPROM_IMAGE) $(SIZEDUMMY)

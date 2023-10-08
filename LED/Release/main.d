@@ -1,7 +1,10 @@
-main.o main.o: ../main.c ../STD_TYPES.h ../BIT_MATH.h ../DIO_Interface.h
+main.o main.o: ../main.c ../LIB/STD_TYPES.h ../MCAL/DIO_Config.h \
+  ../MCAL/DIO_Interface.h ../MCAL/../LIB/STD_TYPES.h
 
-../STD_TYPES.h:
+../LIB/STD_TYPES.h:
 
-../BIT_MATH.h:
+../MCAL/DIO_Config.h:
 
-../DIO_Interface.h:
+../MCAL/DIO_Interface.h:
+
+../MCAL/../LIB/STD_TYPES.h:
