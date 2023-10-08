@@ -12,8 +12,8 @@
 // Macros to define directions and states(low/high) 
 #define LOW		0
 #define HIGH	1
-#define INPUT	0
-#define OUTPUT	1
+#define INPUT	0x0
+#define OUTPUT	0xFF
 
 // Macros to define values ports and pins 
 #define PORT_A	1
